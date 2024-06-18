@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://juramii.github.io/Team_Period/",
+  "homepage": "https://shikaboo.github.io/Team_period_project/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
