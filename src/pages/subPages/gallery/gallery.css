@@ -1,0 +1,209 @@
+/* 전체 스타일링 */
+.subTop {
+  margin-bottom: 65px;
+}
+
+.subGal {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.subGal > .ImgSwap {
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.subGal > .ImgSwap > .cate {
+  width: 150px;
+  height: 44px;
+  border: 1px solid var(--line-silver);
+}
+
+/* Swiper 영역 스타일링 */
+.subGal > .galImgSec1 {
+  width: 100%;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.subGal > .galImgSec1 > .galImgSec1_inner > .mainImgWrap {
+  position: relative;
+}
+
+.mainSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mainSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+  transition-timing-function: linear !important;
+}
+
+.mainSlide > div {
+  width: 100%;
+  height: 100%;
+}
+
+.mainSlide > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.swiper-slide.mainSlide.swiper-slide-active {
+  width: 80% !important;
+  }
+  
+  .swiper-slide.mainSlide.swiper-slide-prev {
+  width: 10% !important;
+  opacity: 50%;
+  }
+  
+  .swiper-slide.mainSlide.swiper-slide-next {
+  width: 10% !important;
+  opacity: 50%;
+  }
+
+/* Swiper 네비게이션 버튼 스타일링 */
+.swiper-button-next, .swiper-button-prev {
+  color: #fff; /* 네비게이션 버튼 색상 */
+}
+
+.swiper-button-next {
+  right: 20px !important; /* 오른쪽 여백 */
+}
+
+.swiper-button-prev {
+  left: 20px !important; /* 왼쪽 여백 */
+}
+
+/* 그리드 영역 스타일링 */
+.subGal > .galImgSec2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.subGal > .galImgSec2 > .gridBox {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 30px;
+}
+
+.subGal > .galImgSec2 > .gridBox > .gImgCard {
+  width: 100%;
+  height: 100%;
+}
+
+.subGal > .galImgSec2 > .gridBox > .gImgCard > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.subGal > .galImgSec2 > .gridBox > .gImgCard > a > img {
+  width: 100%;
+  height: 294px;
+}
+
+/* 이미지 세부 사항 스타일링 */
+.imageDetails {
+  padding: 10px;
+  background-color: var(--font-black);
+}
+
+.imageDetails h3 {
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.imageDetails p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.imageDetails .content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 페이지 버튼 스타일링 */
+.pageBtnWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.buttonDown {
+  display: flex;
+  gap: 5px;
+}
+/* 반응형 스타일링 */
+@media screen and (max-width: 1440px) {
+  .subGal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .subGal > h1 {
+    font-size: 48px;
+  }
+
+  .subGal > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .subGal > h1 {
+    font-size: 32px;
+  }
+
+  .subGal > .galImgSec2 > .gridBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subGal > .galImgSec1 {
+    padding: 20px 0;
+  }
+  .subGal > .galImgSec2 > .gridBox {
+    gap: 20px;
+  }
+  .subGal > p {
+    font-size: 14px;
+  }
+
+  .subGal > .galImgSec2 > .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .subGal > .galImgSec2 > .gridBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .subGal > .galleryBtn {
+    gap: 15px;
+  }
+}
