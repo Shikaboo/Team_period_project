@@ -6,9 +6,6 @@ import MainGallery from "./Sec7_Gallery/mainGallery"
 import MainVideo from './mainVideo'
 import Loadig from './loading'
 
-
-
-
 const Main = () =>{
 
   
